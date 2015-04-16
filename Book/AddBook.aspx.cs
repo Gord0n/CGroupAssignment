@@ -17,7 +17,7 @@ namespace BookPages
                 int success = myClient.GetBook(0);
 
                 Boolean ja = true;
-                //Derp de der NO I DONT WANT THIS COMMENT
+                
                 if (success == -1)
                     ja = false;
 
