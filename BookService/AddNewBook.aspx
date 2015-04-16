@@ -9,7 +9,27 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+        <table style="width:100%;">
+            <tr>
+                <td><asp:Label ID="Label1" runat="server" Text="Name:"></asp:Label></td>
+
+                
+                <td>
+                    <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox></td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="Label2" runat="server" Text="Release Date:"></asp:Label></td>
+                
+                <td><asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+                </td>
+            </tr>
+            <tr>
+                <td><asp:Label ID="Label3" runat="server" Text="ISBN:"></asp:Label></td>
+                
+                <td>
+                    <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox></td>
+            </tr>
+        </table>
         
     </div>
     </form>
