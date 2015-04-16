@@ -27,13 +27,7 @@ namespace BookService
             int success = -1;
 
             return success;
-        }
-
-        public Book GetDataUsingDataContract(Book book)
-        {
-
-            return book;
-        }
+        }     
       
     }
 }
