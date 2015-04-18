@@ -47,6 +47,11 @@
                     <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
                  </td>
             </tr>
+            <tr>
+                <td colspan="2" style="text-align: center">
+                    <asp:Button ID="Button1" runat="server" Text="Return To The main page" />
+                </td>
+            </tr>
         </table>
     
     </div>
