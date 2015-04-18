@@ -60,7 +60,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AddNewBook.aspx" />
+    <Content Include="BookSearch.aspx" />
     <Content Include="BooksService.svc" />
+    <Content Include="WriteAReview.aspx" />
     <None Include="Service References\BookReference\BooksService.disco" />
     <None Include="Service References\BookReference\configuration91.svcinfo" />
     <None Include="Service References\BookReference\configuration.svcinfo" />
@@ -79,6 +81,13 @@
     <Compile Include="AddNewBook.aspx.designer.cs">
       <DependentUpon>AddNewBook.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BookSearch.aspx.cs">
+      <DependentUpon>BookSearch.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BookSearch.aspx.designer.cs">
+      <DependentUpon>BookSearch.aspx</DependentUpon>
+    </Compile>
     <Compile Include="BooksService.svc.cs">
       <DependentUpon>BooksService.svc</DependentUpon>
     </Compile>
@@ -95,6 +104,13 @@
     </Compile>
     <Compile Include="ShowAddedBook.aspx.designer.cs">
       <DependentUpon>ShowAddedBook.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WriteAReview.aspx.cs">
+      <DependentUpon>WriteAReview.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WriteAReview.aspx.designer.cs">
+      <DependentUpon>WriteAReview.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
