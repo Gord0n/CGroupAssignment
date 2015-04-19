@@ -63,7 +63,6 @@
     <Content Include="BookSearch.aspx" />
     <Content Include="BooksService.svc" />
     <Content Include="HomePage.aspx" />
-    <Content Include="ViewSearchedBookReview.aspx" />
     <Content Include="WriteAReview.aspx" />
     <None Include="Service References\BookReference\BooksService.disco" />
     <None Include="Service References\BookReference\configuration91.svcinfo" />
@@ -113,13 +112,6 @@
     </Compile>
     <Compile Include="ShowAddedBook.aspx.designer.cs">
       <DependentUpon>ShowAddedBook.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="ViewSearchedBookReview.aspx.cs">
-      <DependentUpon>ViewSearchedBookReview.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="ViewSearchedBookReview.aspx.designer.cs">
-      <DependentUpon>ViewSearchedBookReview.aspx</DependentUpon>
     </Compile>
     <Compile Include="WriteAReview.aspx.cs">
       <DependentUpon>WriteAReview.aspx</DependentUpon>
