@@ -16,5 +16,13 @@ namespace BookService
                 
             }        
         }
+
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+            Session["bookName"] = TextBox1.Text;
+            Session["releaseDate"] = TextBox2.Text;
+            Session["ISBN"] = TextBox3.Text;
+            Response.Redirect("~/ShowAddedBook.aspx");
+        }
     }
 }

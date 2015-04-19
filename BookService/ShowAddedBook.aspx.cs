@@ -11,7 +11,9 @@ namespace BookService
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            Label5.Text = (string)(Session["bookName"]);
+            Label6.Text = (string)(Session["releaseDate"]);
+            Label7.Text = (string)(Session["ISBN"]);
         }
     }
 }

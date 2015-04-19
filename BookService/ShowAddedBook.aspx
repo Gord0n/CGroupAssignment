@@ -17,7 +17,7 @@
                 </td>
                 
                 <td>
-                    <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label5" runat="server" Text="Label5"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -26,7 +26,7 @@
                 </td>
                 
                 <td>
-                    <asp:Label ID="Label6" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label6" runat="server" Text="Label6"></asp:Label>
                 </td>
             </tr>
             <tr>
@@ -35,7 +35,7 @@
                 </td>
                 
                 <td>
-                    <asp:Label ID="Label7" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Text="Label7"></asp:Label>
                 </td>
             </tr>
              <tr>
@@ -44,7 +44,7 @@
                  </td>
                 
                 <td>
-                    <asp:Label ID="Label8" runat="server" Text="Label"></asp:Label>
+                    <asp:Label ID="Label8" runat="server" Text="Label8"></asp:Label>
                  </td>
             </tr>
             <tr>
