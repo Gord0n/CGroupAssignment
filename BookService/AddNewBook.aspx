@@ -44,16 +44,22 @@
                     <asp:Label ID="Label3" runat="server" Text="ISBN:"></asp:Label>
                 </td>
                 
-                <td>
+                <td >
                     <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
                 </td>
             </tr>
             <tr>
-                <td></td>
-                <td>
+              <td></td>
+                <td  >
                     <asp:Button ID="Button1" runat="server" Text="Add Book" OnClick="Button1_Click" />
                 </td>
                 
+            </tr>
+            <tr>
+                <td></td>
+                <td >
+                    <asp:Label ID="Label4" runat="server"></asp:Label>
+                </td>
             </tr>
         </table>
     

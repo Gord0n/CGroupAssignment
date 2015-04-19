@@ -19,10 +19,17 @@ namespace BookService
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            Session["bookName"] = TextBox1.Text;
-            Session["releaseDate"] = TextBox2.Text;
-            Session["ISBN"] = TextBox3.Text;
-            Response.Redirect("~/ShowAddedBook.aspx");
+            if (TextBox1.Text == "" || TextBox2.Text == "" || TextBox3.Text == "")
+            {
+                Label4.Text = "Fields cannot be left empty.";
+            }
+            else
+            {
+                Session["bookName"] = TextBox1.Text;
+                Session["releaseDate"] = TextBox2.Text;
+                Session["ISBN"] = TextBox3.Text;
+                Response.Redirect("~/ShowAddedBook.aspx");
+            }
         }
     }
 }
