@@ -62,7 +62,7 @@
     <Content Include="AddNewBook.aspx" />
     <Content Include="BookSearch.aspx" />
     <Content Include="BooksService.svc" />
-    <Content Include="HomePage.aspx" />
+    <CodeAnalysisDictionary Include="HomePage.aspx" />
     <Content Include="WriteAReview.aspx" />
     <None Include="Service References\BookReference\BooksService.disco" />
     <None Include="Service References\BookReference\configuration91.svcinfo" />
