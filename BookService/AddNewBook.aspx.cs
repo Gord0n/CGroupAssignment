@@ -19,14 +19,30 @@ namespace BookService
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            if (TextBox1.Text == "" || TextBox2.Text == "" || TextBox3.Text == "")
+
+            String bookName = TextBox1.Text;
+            DateTime date = Calendar1.SelectedDate;
+            int isbn = Int32.Parse(TextBox3.Text);
+
+            if (TextBox1.Text == "" || TextBox3.Text == "")
             {
                 Label4.Text = "Fields cannot be left empty.";
             }
             else
             {
+                
+
+                using (BookReference.BooksInterfaceClient myClient = new BookReference.BooksInterfaceClient())
+                {
+                   
+
+                    Book book = new Book(bookName, date, isbn);
+                    
+
+                }      
+
                 Session["bookName"] = TextBox1.Text;
-                Session["releaseDate"] = TextBox2.Text;
+                Session["releaseDate"] = date;
                 Session["ISBN"] = TextBox3.Text;
                 Response.Redirect("~/ShowAddedBook.aspx");
             }

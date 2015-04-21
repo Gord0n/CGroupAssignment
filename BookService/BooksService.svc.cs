@@ -10,14 +10,19 @@ namespace BookService
 {
    
     public class BooksService : BooksInterface
-    {
+    {     
+        //Makes the database connection
+        public void conncetToDatabase()
+        {
+
+        }
 
         // Add a book to the database
-        public int AddBook(Book book)
+        public bool AddBook()
         {
             //do connection to SQL database and add it in
-            int success = 0; //change this depending on if the database recieved the information properly or not
-
+            bool success = false; //change this depending on if the database recieved the information properly or not
+            
             return success;
         }
 

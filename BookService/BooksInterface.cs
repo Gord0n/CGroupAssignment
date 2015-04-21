@@ -12,9 +12,11 @@ namespace BookService
     [ServiceContract]
     public interface BooksInterface
     {
+        [OperationContract]
+        void conncetToDatabase();
 
         [OperationContract]
-        int AddBook(Book book);
+        bool AddBook();
 
         [OperationContract]
         int GetBook(int bookId);
@@ -24,10 +26,17 @@ namespace BookService
     [DataContract]
     public class Book
     {
-        string bookName;
-        DateTime releaseDate;
-        int isbn;
-        int id;
+        private string bookName;
+        private DateTime releaseDate;
+        private int isbn;
+        private int id; //Auto generated
+        
+        public Book(String bookName, DateTime releaseDate, int isbn)
+        {
+            BookName = bookName;
+            ReleaseDate = releaseDate;
+            ISBN = isbn;
+        }
 
         [DataMember]
         public string BookName { get; set; }
