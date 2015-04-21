@@ -11,10 +11,10 @@ namespace BookService
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            using (BookReference.BooksInterfaceClient myClient = new BookReference.BooksInterfaceClient())
+            using (ServiceReference1.BooksInterfaceClient myClient = new ServiceReference1.BooksInterfaceClient())
             {
                 
-            }        
+            }      
         }
 
         protected void Button1_Click(object sender, EventArgs e)
