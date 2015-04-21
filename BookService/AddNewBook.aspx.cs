@@ -29,17 +29,11 @@ namespace BookService
                 Label4.Text = "Fields cannot be left empty.";
             }
             else
-            {
-                
-
-                using (BookReference.BooksInterfaceClient myClient = new BookReference.BooksInterfaceClient())
+            {                
+                using (ServiceReference1.BooksInterfaceClient myClient = new ServiceReference1.BooksInterfaceClient())
                 {
-                   
-
-                    Book book = new Book(bookName, date, isbn);
-                    
-
-                }      
+                    bool success = myClient.AddBook();
+                }
 
                 Session["bookName"] = TextBox1.Text;
                 Session["releaseDate"] = date;

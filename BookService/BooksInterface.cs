@@ -10,7 +10,7 @@ namespace BookService
 {
     
     [ServiceContract]
-    public interface BooksInterface
+    public interface IBooksService
     {
         [OperationContract]
         void conncetToDatabase();

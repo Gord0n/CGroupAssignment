@@ -1,17 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:import schemaLocation="http://localhost:55170/BooksService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/BookService" />
+  <xs:element name="conncetToDatabase">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="conncetToDatabaseResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
   <xs:element name="AddBook">
     <xs:complexType>
-      <xs:sequence>
-        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/BookService" minOccurs="0" name="book" nillable="true" type="q1:Book" />
-      </xs:sequence>
+      <xs:sequence />
     </xs:complexType>
   </xs:element>
   <xs:element name="AddBookResponse">
     <xs:complexType>
       <xs:sequence>
-        <xs:element minOccurs="0" name="AddBookResult" type="xs:int" />
+        <xs:element minOccurs="0" name="AddBookResult" type="xs:boolean" />
       </xs:sequence>
     </xs:complexType>
   </xs:element>

@@ -9,7 +9,7 @@ using System.Text;
 namespace BookService
 {
    
-    public class BooksService : BooksInterface
+    public class BooksService : IBooksService
     {     
         //Makes the database connection
         public void conncetToDatabase()
